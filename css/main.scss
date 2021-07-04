@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+	--primary-color: #08141b;
+	--accent-color1: #007af3;
+	--accent-color2: #50e2e7;
+	--dark-sectioncolor1: #040d21;
+	--card-accent: #0c162d;
+}
+
+body {
+	background: white;
+	margin: 0;
+	font-family: "Poppins";
+}
+
+// .primary-nav {
+// 	li.active {
+// 		background-color: #e7e7e7;
+// 		cursor: pointer;
+// 	}
+// }
+
+nav ul li.active a {
+	background-color: var(--accent-color1);
+	border-radius: 2em;
+	min-height: 30px;
+	border: 0;
+}
+
+.navbar {
+	background: var(--primary-color);
+	padding: 1em;
+
+	.logo {
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		font-size: 1.2em;
+		margin-left: 1em;
+
+		span {
+			color: var(--accent-color1);
+		}
+	}
+
+	nav {
+		display: none;
+	}
+
+	.container {
+		display: flex;
+		place-content: space-between;
+		align-items: center;
+	}
+
+	.mobile-menu {
+		cursor: pointer;
+		fill: white;
+	}
+}
+
+nav.menu-btn {
+	display: block;
+}
+
+a {
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	position: fixed;
+	z-index: 999;
+	width: 300px;
+	top: 0;
+	right: 0;
+	background: var(--primary-color);
+	height: 100vh;
+	padding: 1em;
+
+	ul.primary-nav {
+		margin-top: 5em;
+	}
+
+	li {
+		a {
+			color: white;
+			text-decoration: none;
+			padding: 0.5em;
+			font-size: 1.3em;
+			text-align: left;
+			border: 1px solid transparent;
+			border-radius: 2em;
+			min-height: 30px;
+			margin: 0 0.2em;
+
+			&:hover {
+				border: 1px solid #d0d0d0;
+				border-radius: 2em;
+				min-height: 30px;
+			}
+		}
+	}
+}
+
+.nav-link svg {
+	width: 2rem;
+	min-width: 2rem;
+	margin-right: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.secondary-nav {
+	display: flex;
+	margin-top: 2em;
+}
+
+.nav-link {
+	display: flex;
+	align-items: center;
+}
+
+/* Page content */
+.content {
+	padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+	padding-top: 60px;
+}
+
+.mobile-menu {
+	right: 0;
+	top: 0;
+}
+
+.mobile-menu-exit {
+	fill: white;
+	float: right;
+	margin: 0.5em;
+	cursor: pointer;
+}
+
+section {
+	padding: 5em 2em;
+}
+
+.hero {
+	text-align: center;
+
+	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+		url("/images/PCB.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+}
+
+.left-col {
+	h1 {
+		font-size: 2.5em;
+		line-height: 1.3em;
+		margin-top: 0.2em;
+		color: white;
+	}
+
+	.hero-cta {
+		background: var(--accent-color1);
+		padding: 0.6em 1.3em;
+		font-size: 1.4em;
+		border-radius: 5em;
+		display: inline-block;
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
+
+		a:hover {
+			transition-duration: 0.4s;
+			font-weight: bold;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.mobile-menu,
+	.mobile-menu-exit {
+		display: none;
+	}
+
+	.navbar .container {
+		display: grid;
+		grid-template-columns: 150px auto;
+		width: 100%;
+		justify-content: unset;
+	}
+
+	.navbar nav {
+		display: flex;
+		justify-content: space-between;
+		position: unset;
+		height: auto;
+		width: 100%;
+		padding: 0;
+
+		ul {
+			display: flex;
+			align-items: center;
+		}
+
+		li {
+			a {
+				font-size: 0.8em;
+				padding: 0 1em;
+			}
+		}
+
+		.primary-nav {
+			margin: 0;
+			margin-left: 3em;
+		}
+		.secondary-nav {
+			margin: 0;
+			margin-right: 2em;
+
+			.nav-itemlinked {
+				margin-left: -1em;
+			}
+		}
+	}
+
+	.nav-link svg {
+		width: 1rem;
+		min-width: 1rem;
+		margin-right: 1em;
+		display: flex;
+	}
+}
+
+@media only screen and (min-width: 1080px) {
+	.container {
+		width: 1080px;
+		margin: 0 auto;
+	}
+
+	section {
+		padding: 10em 4em;
+	}
+
+	.hero .container {
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+
+		.left-col {
+			margin: 0 3em 0 3em;
+
+			h1 {
+				font-size: 3em;
+				width: 80%;
+			}
+		}
+	}
+
+	.skills-section {
+		margin-top: 2.5em;
+		background-color: var(--dark-sectioncolor1);
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.left {
+			display: flex;
+			align-items: center;
+
+			.column1 {
+				background-color: var(--card-accent);
+				width: 100%;
+				box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.1),
+					0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02),
+					0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
+
+				border-radius: 5px;
+				padding: 2em;
+				margin: 0.5em;
+			}
+
+			.column2 {
+				background-color: var(--card-accent);
+				width: 100%;
+				box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.1),
+					0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02),
+					0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
+
+				border-radius: 5px;
+				padding: 2em;
+				margin: 0.5em;
+			}
+		}
+
+		.right {
+			display: flex;
+			align-items: center;
+
+			.column1 {
+				background-color: var(--card-accent);
+				width: 100%;
+				box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.1),
+					0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02),
+					0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
+
+				border-radius: 5px;
+				padding: 2em;
+				margin: 0.5em;
+			}
+
+			.column2 {
+				background-color: var(--card-accent);
+				width: 100%;
+				box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.1),
+					0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02),
+					0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
+
+				border-radius: 5px;
+				padding: 2em;
+				margin: 0.5em;
+			}
+		}
+	}
+
+	img {
+		width: 30%;
+		margin-right: 5em;
+	}
+}
