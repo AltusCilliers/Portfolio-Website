@@ -180,13 +180,20 @@ section {
 }
 
 .left-col h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 1.3em;
-  margin-top: 0.2em;
+  margin-top: 1.6em;
+  margin-bottom: 0;
   color: white;
 }
 
+.left-col p {
+  color: white;
+  margin: 0;
+}
+
 .left-col .hero-cta {
+  margin-top: 0.5em;
   background: var(--accent-color1);
   padding: 0.6em 1.3em;
   font-size: 1.4em;
@@ -273,7 +280,6 @@ section {
 
 @media only screen and (min-width: 1080px) {
   .container {
-    width: 1080px;
     margin: 0 auto;
   }
   section {
@@ -289,10 +295,13 @@ section {
     text-align: left;
   }
   .hero .container .left-col {
-    margin: 0 3em 0 3em;
+    margin: 0 3em 0 10%;
   }
   .hero .container .left-col h1 {
-    font-size: 3em;
+    font-size: 2em;
+    width: 80%;
+  }
+  .hero .container .left-col p {
     width: 80%;
   }
   .skills-section {
@@ -300,6 +309,22 @@ section {
     background-color: var(--dark-sectioncolor1);
   }
   .skills-section .container {
+    margin-top: -5em;
+  }
+  .skills-section h2 {
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0;
+    margin-top: -5em;
+    padding-bottom: 3em;
+  }
+  .skills-section span {
+    display: block;
+    text-align: center;
+    font-size: 0.55em;
+  }
+  .skills-section .top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -310,61 +335,93 @@ section {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .skills-section .left {
+  .skills-section .top .column1 {
+    width: auto;
+    border-radius: 5px;
+    padding: 2em;
+    margin: 0.5em;
+  }
+  .skills-section .top .column2 {
+    width: auto;
+    border-radius: 5px;
+    padding: 2em;
+    margin: 0.5em;
+  }
+  .skills-section .top .column3 {
+    width: auto;
+    border-radius: 5px;
+    padding: 2em;
+    margin: 0.5em;
+  }
+  .skills-section .top .column4 {
+    width: auto;
+    border-radius: 5px;
+    padding: 2em;
+    margin: 0.5em;
+  }
+  .skills-section .bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .skills-section .left .column1 {
+  .skills-section .bottom .column1 {
     background-color: var(--card-accent);
-    width: 100%;
+    width: auto;
     -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
             box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
     border-radius: 5px;
     padding: 2em;
     margin: 0.5em;
   }
-  .skills-section .left .column2 {
+  .skills-section .bottom .column2 {
     background-color: var(--card-accent);
-    width: 100%;
+    width: auto;
     -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
             box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
     border-radius: 5px;
     padding: 2em;
     margin: 0.5em;
   }
-  .skills-section .right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .skills-section .right .column1 {
+  .skills-section .bottom .column3 {
     background-color: var(--card-accent);
-    width: 100%;
+    width: auto;
     -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
             box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
     border-radius: 5px;
     padding: 2em;
     margin: 0.5em;
   }
-  .skills-section .right .column2 {
+  .skills-section .bottom .column4 {
     background-color: var(--card-accent);
-    width: 100%;
+    width: auto;
     -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
             box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
     border-radius: 5px;
     padding: 2em;
     margin: 0.5em;
   }
-  img {
-    width: 30%;
-    margin-right: 5em;
+  img.hero-image {
+    width: 20%;
+    margin-right: 10%;
+  }
+}
+
+.projects-section img {
+  width: 50%;
+}
+
+@media only screen and (max-width: 850px) {
+  primary-nav {
+    margin-left: 0;
+  }
+  .secondary-nav {
+    margin-right: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */

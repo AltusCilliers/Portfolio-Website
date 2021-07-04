@@ -34,7 +34,7 @@ function myFunction() {
 //test github
 //scroll
 $(function () {
-	$("nav ul li a").bind("click", function (event) {
+	$("nav .primary-nav li a").bind("click", function (event) {
 		event.preventDefault();
 		var $anchor = $(this);
 		console.log($anchor.attr("href"));
