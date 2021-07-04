@@ -49,7 +49,7 @@ $(function () {
 	});
 });
 
-//highligh current page
+//highlight current page
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav ul li");
 window.addEventListener("scroll", () => {
