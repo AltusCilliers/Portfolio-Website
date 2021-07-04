@@ -31,6 +31,7 @@ function myFunction() {
 	}
 }
 
+//test github
 //scroll
 $(function () {
 	$("nav ul li a").bind("click", function (event) {
