@@ -434,15 +434,119 @@ section {
 		}
 	}
 
+	.projects-section {
+		.container {
+			width: 80%;
+			padding: 8em;
+			background-color: var(--dark-sectioncolor1);
+			border-radius: 20px;
+
+			h2 {
+				display: block;
+				color: white;
+				margin: 0;
+				text-align: center;
+				padding: 2em;
+				margin-top: 2.5em;
+			}
+
+			.project-margin-exception {
+				margin-top: 0;
+			}
+
+			.links-box {
+				background-color: var(--card-accent);
+				width: 25%;
+				box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.1),
+					0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02),
+					0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
+
+				border-radius: 5px;
+				padding: 1em;
+				margin-left: 2em;
+				margin-top: 3em;
+
+				display: flex;
+				justify-content: space-between;
+				.git {
+					margin-left: 3em;
+				}
+				.web {
+					margin-right: 3em;
+				}
+			}
+
+			.links-box2 {
+				background-color: var(--card-accent);
+				width: 25%;
+				box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.1),
+					0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02),
+					0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
+
+				border-radius: 5px;
+				padding: 1em;
+				margin-left: 67.5%;
+				margin-top: 3em;
+
+				display: flex;
+				justify-content: space-between;
+				.git {
+					margin-left: 3em;
+				}
+				.web {
+					margin-right: 3em;
+				}
+			}
+
+			img {
+				width: 2em;
+			}
+
+			.project-1 {
+				display: flex;
+				flex-direction: row-reverse;
+				align-content: space-between;
+
+				p {
+					color: white;
+					margin-left: 10%;
+				}
+
+				img {
+					width: 35%;
+				}
+			}
+			.project-2 {
+				display: flex;
+				align-content: space-between;
+
+				p {
+					color: white;
+					margin-right: 10%;
+				}
+
+				img {
+					width: 35%;
+				}
+			}
+			.project-3 {
+				display: flex;
+				flex-direction: row-reverse;
+				align-content: space-between;
+				p {
+					color: white;
+					margin-left: 10%;
+				}
+				img {
+					width: 35%;
+				}
+			}
+		}
+	}
+
 	img.hero-image {
 		width: 20%;
 		margin-right: 10%;
-	}
-}
-
-.projects-section {
-	img {
-		width: 50%;
 	}
 }
 
