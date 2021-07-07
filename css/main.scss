@@ -307,7 +307,7 @@ section {
 		}
 
 		h2 {
-			color: white;
+			color: var(--accent-color2);
 			text-align: center;
 			display: block;
 			margin: 0;
@@ -443,7 +443,7 @@ section {
 
 			h2 {
 				display: block;
-				color: white;
+				color: var(--accent-color2);
 				margin: 0;
 				text-align: center;
 				padding: 2em;
@@ -509,7 +509,7 @@ section {
 				border-radius: 5px;
 				box-shadow: 0 0 10px hsla(0, 0%, 100%, 0.5);
 				padding: 1em;
-				margin-left: 67.5%;
+				margin-left: 2em;
 				margin-top: 3em;
 
 				display: flex;
@@ -568,17 +568,117 @@ section {
 		}
 	}
 
-	img.hero-image {
-		width: 20%;
-		margin-right: 10%;
-	}
-}
+	.about-section {
+		background-color: var(--dark-sectioncolor1);
+		h2 {
+			display: block;
+			color: var(--accent-color2);
+			margin-bottom: 150px;
+			text-align: center;
+		}
+		.container {
+			.frame {
+				//margin-top: 5em;
+				display: flex;
+				align-content: space-between;
+				p {
+					color: white;
+					text-align: left;
+					margin-left: 10em;
+				}
+			}
 
-@media only screen and (max-width: 850px) {
-	primary-nav {
-		margin-left: 0;
+			.picture {
+				img {
+					width: 15em;
+					margin-left: 150px;
+					border-radius: 50%;
+					outline: none;
+					object-fit: cover;
+					padding: 2em;
+					margin-bottom: 10px;
+					box-shadow: inset 0 0 0 10px var(--accent-color2);
+					//position: relative;
+				}
+			}
+
+			img {
+				width: 3em;
+				color: white;
+			}
+
+			svg {
+				width: 2.4em;
+				color: white;
+			}
+			.contacts {
+				position: relative;
+				margin-left: 14em;
+			}
+		}
+		.contact-me {
+			h3 {
+				text-align: center;
+				color: white;
+			}
+
+			.contact-form {
+				display: flex;
+				justify-content: center;
+			}
+
+			form {
+				background-color: var(--card-accent);
+				padding: 50px;
+				border-radius: 20px;
+				box-shadow: 0 0 10px 1px var(--accent-color2);
+				label {
+					text-align: left;
+					display: block;
+					color: white;
+					padding: 10px 0 5px 0;
+				}
+
+				input,
+				textarea {
+					border: 2px solid grey;
+					border-radius: 6px;
+					padding: 5px;
+					width: 100%;
+					resize: vertical;
+				}
+
+				textarea {
+					padding: 10px 5px 50px 5px;
+				}
+
+				input:focus {
+					outline: none;
+					border-color: var(--accent-color2);
+					box-shadow: 0 0 10px var(--accent-color2);
+					transition: box-shadow linear 1s;
+				}
+				textarea:focus {
+					outline: none;
+					border-color: var(--accent-color2);
+					box-shadow: 0 0 10px var(--accent-color2);
+					transition: box-shadow linear 1s;
+				}
+			}
+		}
+
+		img.hero-image {
+			width: 20%;
+			margin-right: 10%;
+		}
 	}
-	.secondary-nav {
-		margin-right: 2em;
+
+	@media only screen and (max-width: 850px) {
+		primary-nav {
+			margin-left: 0;
+		}
+		.secondary-nav {
+			margin-right: 2em;
+		}
 	}
 }

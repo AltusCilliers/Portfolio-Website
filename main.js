@@ -72,3 +72,10 @@ window.addEventListener("scroll", () => {
 		}
 	});
 });
+
+//clear form
+button.onclick = () => {
+	for (const form of document.getElementsByTagName("form")) {
+		form.reset();
+	}
+};

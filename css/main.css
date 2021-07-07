@@ -312,7 +312,7 @@ section {
     margin-top: -5em;
   }
   .skills-section h2 {
-    color: white;
+    color: var(--accent-color2);
     text-align: center;
     display: block;
     margin: 0;
@@ -414,7 +414,7 @@ section {
   }
   .projects-section .container h2 {
     display: block;
-    color: white;
+    color: var(--accent-color2);
     margin: 0;
     text-align: center;
     padding: 2em;
@@ -477,7 +477,7 @@ section {
     -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     padding: 1em;
-    margin-left: 67.5%;
+    margin-left: 2em;
     margin-top: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -545,13 +545,114 @@ section {
   .projects-section .container .project-3 img {
     width: 35%;
   }
-  img.hero-image {
+  .about-section {
+    background-color: var(--dark-sectioncolor1);
+  }
+  .about-section h2 {
+    display: block;
+    color: var(--accent-color2);
+    margin-bottom: 150px;
+    text-align: center;
+  }
+  .about-section .container .frame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .about-section .container .frame p {
+    color: white;
+    text-align: left;
+    margin-left: 10em;
+  }
+  .about-section .container .picture img {
+    width: 15em;
+    margin-left: 150px;
+    border-radius: 50%;
+    outline: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 2em;
+    margin-bottom: 10px;
+    -webkit-box-shadow: inset 0 0 0 10px var(--accent-color2);
+            box-shadow: inset 0 0 0 10px var(--accent-color2);
+  }
+  .about-section .container img {
+    width: 3em;
+    color: white;
+  }
+  .about-section .container svg {
+    width: 2.4em;
+    color: white;
+  }
+  .about-section .container .contacts {
+    position: relative;
+    margin-left: 14em;
+  }
+  .about-section .contact-me h3 {
+    text-align: center;
+    color: white;
+  }
+  .about-section .contact-me .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-section .contact-me form {
+    background-color: var(--card-accent);
+    padding: 50px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 10px 1px var(--accent-color2);
+            box-shadow: 0 0 10px 1px var(--accent-color2);
+  }
+  .about-section .contact-me form label {
+    text-align: left;
+    display: block;
+    color: white;
+    padding: 10px 0 5px 0;
+  }
+  .about-section .contact-me form input,
+  .about-section .contact-me form textarea {
+    border: 2px solid grey;
+    border-radius: 6px;
+    padding: 5px;
+    width: 100%;
+    resize: vertical;
+  }
+  .about-section .contact-me form textarea {
+    padding: 10px 5px 50px 5px;
+  }
+  .about-section .contact-me form input:focus {
+    outline: none;
+    border-color: var(--accent-color2);
+    -webkit-box-shadow: 0 0 10px var(--accent-color2);
+            box-shadow: 0 0 10px var(--accent-color2);
+    -webkit-transition: -webkit-box-shadow linear 1s;
+    transition: -webkit-box-shadow linear 1s;
+    transition: box-shadow linear 1s;
+    transition: box-shadow linear 1s, -webkit-box-shadow linear 1s;
+  }
+  .about-section .contact-me form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color2);
+    -webkit-box-shadow: 0 0 10px var(--accent-color2);
+            box-shadow: 0 0 10px var(--accent-color2);
+    -webkit-transition: -webkit-box-shadow linear 1s;
+    transition: -webkit-box-shadow linear 1s;
+    transition: box-shadow linear 1s;
+    transition: box-shadow linear 1s, -webkit-box-shadow linear 1s;
+  }
+  .about-section img.hero-image {
     width: 20%;
     margin-right: 10%;
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (min-width: 1080px) and (max-width: 850px) {
   primary-nav {
     margin-left: 0;
   }
