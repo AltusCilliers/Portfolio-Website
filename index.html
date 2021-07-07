@@ -55,14 +55,14 @@
 							</a>
 						</li>
 
-						<li class="nav-item">
+						<li class="About" class="nav-item">
 							<a href="#About" class="nav-link">
 								<!-- prettier-ignore -->
 								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg>
 								<span class="link-text">About</span>
 							</a>
 						</li>
-						<li class="nav-item">
+						<li class="Contact" class="nav-item">
 							<a href="#Contact" class="nav-link">
 								<!-- prettier-ignore -->
 								<svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +120,7 @@
 		</section>
 
 		<section id="Skills" class="skills-section">
-			<h2>SKILLS</h2>
+			<h2>Skills</h2>
 			<!-- <img class="glow" src="../images/repo-terminal-glow.svg" /> -->
 			<div class="container">
 				<div class="top">
@@ -258,7 +258,80 @@
 			</div>
 		</section>
 
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<section id="About" class="about-section">
+			<div class="container">
+				<h2>About</h2>
+				<div class="frame">
+					<div class="picture">
+						<span class="circle"></span>
+						<img src="images/about-photo.jpg" alt="Photo of Altus Cilliers" />
+					</div>
+
+					<div class="about-text">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus a,
+							eaque, sequi quia esse corrupti quis in expedita voluptatem qui
+							ratione, perspiciatis sit dolore laborum dolorum atque molestias
+							fuga? Incidunt!Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Minus a, eaque, sequi quia esse corrupti quis in expedita
+							voluptatem qui ratione, perspiciatis sit dolore laborum dolorum
+							atque molestias fuga? Incidunt!Lorem ipsum dolor sit amet
+							consectetur adipisicing elit. Minus a, eaque, sequi quia esse
+							corrupti quis in expedita voluptatem qui ratione, perspiciatis sit
+							dolore laborum dolorum atque molestias fuga? Incidunt!
+						</p>
+					</div>
+				</div>
+				<div class="contacts">
+					<a class="email">
+						<img src="images/email.svg" />
+					</a>
+					<a class="git">
+						<img src="images/github.svg" />
+					</a>
+					<a class="linked-in">
+						<svg
+							viewBox="0 0 22 26"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M20.4286 1.625H1.56652C0.702232 1.625 0 2.36133 0 3.26523V22.7348C0 23.6387 0.702232 24.375 1.56652 24.375H20.4286C21.2929 24.375 22 23.6387 22 22.7348V3.26523C22 2.36133 21.2929 1.625 20.4286 1.625ZM6.64911 21.125H3.38839V10.268H6.65402V21.125H6.64911ZM5.01875 8.78516C3.97277 8.78516 3.12812 7.90664 3.12812 6.83008C3.12812 5.75352 3.97277 4.875 5.01875 4.875C6.05982 4.875 6.90937 5.75352 6.90937 6.83008C6.90937 7.91172 6.06473 8.78516 5.01875 8.78516ZM18.8719 21.125H15.6112V15.8438C15.6112 14.5844 15.5866 12.9645 13.917 12.9645C12.2179 12.9645 11.9576 14.3355 11.9576 15.7523V21.125H8.69688V10.268H11.825V11.7508H11.8692C12.3062 10.8977 13.3719 9.99883 14.958 9.99883C18.258 9.99883 18.8719 12.2484 18.8719 15.1734V21.125Z"
+								fill="white"
+							/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="contact-me">
+				<h3>Contact me</h3>
+				<div class="contact-form">
+					<form action="https://formspree.io/f/myylpqdl" method="POST">
+						<!-- 	target="_blank"  -->
+						<!-- <div class="name"> -->
+						<label> Your Name: </label>
+						<input id="clear" name="name" type="name" />
+						<!-- </div> -->
+						<!-- <div class="email"> -->
+						<label> Emails: </label>
+						<input id="clear" name="_replyto" type="email" />
+						<!-- </div> -->
+						<!-- <div class="message"> -->
+						<label> Message: </label>
+						<textarea
+							name="message"
+							id="clear"
+							placeholder="Enter your message here ..."
+						></textarea>
+						<!-- </div> -->
+
+						<div class="submit">
+							<button type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
 
 		<script
 			src="https://code.jquery.com/jquery-3.6.0.min.js"
