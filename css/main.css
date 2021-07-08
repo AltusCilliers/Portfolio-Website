@@ -652,7 +652,7 @@ section {
   }
 }
 
-@media only screen and (min-width: 1080px) and (max-width: 850px) {
+@media only screen and (max-width: 850px) {
   primary-nav {
     margin-left: 0;
   }
