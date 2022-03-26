@@ -358,6 +358,10 @@ section {
   margin-left: 10%;
 }
 
+.projects-section .project-1 .col1 {
+  width: 50%;
+}
+
 .projects-section .project-1 .col1 img {
   width: 100%;
 }
@@ -391,6 +395,10 @@ section {
           justify-content: space-between;
 }
 
+.projects-section .project-1 .col2 {
+  width: 50%;
+}
+
 .projects-section .project-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,6 +414,10 @@ section {
 .projects-section .project-2 p {
   color: white;
   margin-left: 10%;
+}
+
+.projects-section .project-2 .col1 {
+  width: 50%;
 }
 
 .projects-section .project-2 .col1 img {
@@ -441,6 +453,10 @@ section {
           justify-content: space-between;
 }
 
+.projects-section .project-2 .col2 {
+  width: 50%;
+}
+
 .projects-section .project-3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,6 +472,10 @@ section {
 .projects-section .project-3 p {
   color: white;
   margin-left: 10%;
+}
+
+.projects-section .project-3 .col1 {
+  width: 50%;
 }
 
 .projects-section .project-3 .col1 img {
@@ -489,6 +509,10 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.projects-section .project-3 .col2 {
+  width: 50%;
 }
 
 .about-section {
@@ -787,20 +811,41 @@ section {
 }
 
 @media only screen and (max-width: 480px) {
-  .about-section {
-    padding-bottom: 25em;
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
   }
-  .about-section .container .frame img {
-    width: 10em;
-    padding: 1.5em;
-    margin-bottom: 10px;
-    -webkit-box-shadow: inset 0 0 0 8px var(--accent-color2);
-            box-shadow: inset 0 0 0 8px var(--accent-color2);
-  }
-  .about-section .container .frame p {
-    text-align: center;
+  .hero .container .left-col {
     margin: 0;
-    margin-bottom: 10px;
+  }
+  .hero .container .left-col h1 {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero .container .left-col p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  .hero .container .left-col .hero-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .hero .container .hero-image {
+    margin: 1em auto;
+  }
+  .skills-section {
+    margin: 5em 0;
   }
   .skills-section .container {
     width: 100%;
@@ -843,9 +888,17 @@ section {
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
   }
+  .projects-section {
+    margin: 5em 0;
+    padding: 5em 4em;
+    background-color: var(--dark-sectioncolor1);
+  }
   .projects-section .container {
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+  .projects-section .container h2 {
+    padding: 0;
   }
   .projects-section .project-1 {
     display: -webkit-box;
@@ -857,13 +910,32 @@ section {
             flex-direction: column;
     -ms-flex-line-pack: justify;
         align-content: space-between;
+    margin-bottom: 6em;
   }
   .projects-section .project-1 .col1 {
+    width: 100%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
+  .projects-section .project-1 .col1 .links-box {
+    width: 50%;
+    padding: 1em;
+    margin: 1em auto 0;
+  }
+  .projects-section .project-1 .col1 .links-box img {
+    width: 1.5em;
+  }
+  .projects-section .project-1 .col1 .links-box a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .projects-section .project-1 .col2 {
+    width: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -878,16 +950,35 @@ section {
             flex-direction: column;
     -ms-flex-line-pack: justify;
         align-content: space-between;
+    margin-bottom: 6em;
   }
   .projects-section .project-2 .col1 {
+    width: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .projects-section .project-2 .col1 .links-box {
+    width: 50%;
+    padding: 1em;
+    margin: 1em auto 0;
+  }
+  .projects-section .project-2 .col1 .links-box img {
+    width: 1.5em;
+  }
+  .projects-section .project-2 .col1 .links-box a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .projects-section .project-2 .col2 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    width: 100%;
   }
   .projects-section .project-3 {
     display: -webkit-box;
@@ -901,14 +992,52 @@ section {
         align-content: space-between;
   }
   .projects-section .project-3 .col1 {
+    width: 100%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
+  .projects-section .project-3 .col1 .links-box {
+    width: 50%;
+    padding: 1em;
+    margin: 1em auto 0;
+  }
+  .projects-section .project-3 .col1 .links-box img {
+    width: 1.5em;
+  }
+  .projects-section .project-3 .col1 .links-box a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .projects-section .project-3 .col2 {
+    width: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .about-section {
+    padding-bottom: 25em;
+    border: 0 !important;
+    margin: 5em 0 0;
+  }
+  .about-section .container .frame img {
+    width: 10em;
+    padding: 1.5em;
+    margin-bottom: 10px;
+    -webkit-box-shadow: inset 0 0 0 8px var(--accent-color2);
+            box-shadow: inset 0 0 0 8px var(--accent-color2);
+  }
+  .about-section .container .frame p {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .contact-section {
+    margin-top: -1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
