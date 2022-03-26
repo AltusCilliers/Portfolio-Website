@@ -288,29 +288,11 @@ section {
           justify-content: center;
 }
 
-.skills-section .top .column1 {
+.skills-section .top .column {
+  background-color: var(--card-accent);
   width: auto;
-  border-radius: 5px;
-  padding: 2em;
-  margin: 0.5em;
-}
-
-.skills-section .top .column2 {
-  width: auto;
-  border-radius: 5px;
-  padding: 2em;
-  margin: 0.5em;
-}
-
-.skills-section .top .column3 {
-  width: auto;
-  border-radius: 5px;
-  padding: 2em;
-  margin: 0.5em;
-}
-
-.skills-section .top .column4 {
-  width: auto;
+  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
+          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
   border-radius: 5px;
   padding: 2em;
   margin: 0.5em;
@@ -328,37 +310,7 @@ section {
           justify-content: center;
 }
 
-.skills-section .bottom .column1 {
-  background-color: var(--card-accent);
-  width: auto;
-  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
-          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
-  border-radius: 5px;
-  padding: 2em;
-  margin: 0.5em;
-}
-
-.skills-section .bottom .column2 {
-  background-color: var(--card-accent);
-  width: auto;
-  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
-          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
-  border-radius: 5px;
-  padding: 2em;
-  margin: 0.5em;
-}
-
-.skills-section .bottom .column3 {
-  background-color: var(--card-accent);
-  width: auto;
-  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
-          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
-  border-radius: 5px;
-  padding: 2em;
-  margin: 0.5em;
-}
-
-.skills-section .bottom .column4 {
+.skills-section .bottom .column {
   background-color: var(--card-accent);
   width: auto;
   -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
@@ -820,6 +772,9 @@ section {
   .about-section {
     padding-bottom: 25em;
   }
+  .projects-section .container .links-box2 {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -837,6 +792,47 @@ section {
     text-align: center;
     margin: 0;
     margin-bottom: 10px;
+  }
+  .skills-section .container {
+    width: 100%;
+  }
+  .skills-section .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills-section .top .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.5em;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+  .skills-section .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills-section .bottom .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.5em;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
   }
 }
 /*# sourceMappingURL=main.css.map */
