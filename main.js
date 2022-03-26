@@ -59,7 +59,7 @@ window.addEventListener("scroll", () => {
 		const sectionTop = section.offsetTop;
 		const sectionHeight = section.clientHeight;
 		// prettier-ignore
-		if (pageYOffset >= sectionTop - (sectionHeight / 2)) {
+		if (pageYOffset >= (sectionTop - 200)) {
 			current = section.getAttribute("id");
 		}
 	});
