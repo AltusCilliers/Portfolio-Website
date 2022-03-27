@@ -164,13 +164,9 @@ nav {
 	cursor: pointer;
 }
 
-section {
-	padding: 5em 2em;
-}
-
 .hero {
+	padding: 30vh 4em;
 	text-align: center;
-
 	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
 		url("../images/PCB.jpg");
 	background-repeat: no-repeat;
@@ -214,9 +210,10 @@ section {
 }
 
 .hero-image {
-	margin-top: 2em;
-	width: 30%;
-	height: 50%;
+	//margin-top: 2em;
+	margin: 0 auto;
+	width: 20%;
+	z-index: 99;
 }
 
 //@media only screen and (min-width: 1080px) {
@@ -399,7 +396,9 @@ section {
 		.col1 {
 			width: 50%;
 			img {
-				width: 100%;
+				margin: 0 auto;
+				display: block;
+				width: 80%;
 			}
 
 			.links-box {
@@ -498,7 +497,7 @@ section {
 		}
 
 		.picture img {
-			width: 15em;
+			width: 20em;
 			margin: 0 auto;
 			border-radius: 50%;
 			outline: none;

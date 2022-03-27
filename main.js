@@ -34,8 +34,13 @@ function myFunction() {
 //test github
 //scroll
 $(function () {
+	//$("nav .primary-nav li a").bind("click", function (event) {
 	$("nav .primary-nav li a").bind("click", function (event) {
-		event.preventDefault();
+		const navLi = document.querySelectorAll("nav ul li");
+		console.log(navLi);
+		if (navLi === "About") {
+			event.preventDefault();
+		}
 		var $anchor = $(this);
 		console.log($anchor.attr("href"));
 		$("html, body")
@@ -46,7 +51,6 @@ $(function () {
 				},
 				1000
 			);
-		event.preventDefault();
 	});
 });
 
